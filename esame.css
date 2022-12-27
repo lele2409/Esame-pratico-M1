@@ -1,0 +1,250 @@
+body{/**il body non lascia parti bianche**/
+    margin: 0;
+}
+header{/**posizionamento e fissaggio dell'header**/
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    justify-content: space-between;
+    background-color: #FFC017;
+    padding: 20px 100px;
+    border-bottom: 1px solid black;
+}
+.logo{/**dimensioni logo**/
+    width: 25%;
+}
+.nav{/**classe del div di navigazione**/
+    display:flex;
+}
+.nav button{/**stilizzazione pulsanti di navigazione**/
+    width: 100px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    font-size: 11pt;
+}
+.nav button:hover{/**effetto al passaggio del mouse**/
+    border-bottom: 1px solid red;
+}
+.nav button:last-child{/**seleziona l'ultimo pulsante e lo stilizza**/
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+}
+.nav button:last-child:hover{
+    background-color:green;
+}
+.start button{/**stilizza il pulsante a centro pagina**/
+    padding: 0 30px;
+    font-size: 16pt;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    height: 50px;
+    font-weight: medium;
+    cursor: pointer;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-delay: 0.5s;
+}
+.start button:hover{
+    background-color: green;
+}
+@keyframes example { /** animazione pulsante**/
+    0%   {background-color: black;}
+    25%  {background-color: #1DA1F3;}
+    50%  {background-color: green;}
+    100% {background-color: #FFC017;}
+  }
+.start p{ /**grandezza carattere paragrafo**/
+    font-size: x-large;
+}
+h1{/**carattere del titolo**/
+    margin: auto;
+    font-size: 65pt;
+    font-weight: normal;
+}
+.start{/**stilizza il div contenente il pulsante di inizio**/
+    background-color: #FFC017;
+    padding-left: 100px;
+    padding-top: 78px;
+    padding-bottom: 90px;
+    border-bottom:1px solid black;
+}
+.schedule{/**renderizza e posiziona le schede prima del corpo della pagina**/
+    width: 55%;
+    margin-top: 40px;
+    margin-left: 100px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.507);
+}
+.schedule button{/**stilizza i pulsanti del div**/
+    color: grey;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.schedule button:hover{
+    border-bottom: 1.5px solid black;
+    color: black;
+}
+.magazine{/**renderizza e posiziona in colonna le notizie**/
+    width: 38%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 100px;
+}
+.magazine div p:last-of-type{/**modifica il paragrafo da block a inline-block**/
+    display: inline-block;
+}
+.grey{/**classe generica di colore grigio**/
+    color: grey;
+}
+.react{/**stilizza il pulsante sotto la notizia**/
+    border: none;
+    background-color: rgba(128, 128, 128, 0.281);
+    color: gray;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.picture{/**div che renderizza in colonna le immagini**/
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+main{/**affianca i div figli**/
+    display: flex;
+}
+#section{/**dispone la sezione destra della pagina**/
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+    margin-left: 3%;
+    width: 32%;
+    border-left: 1px solid rgba(128, 128, 128, 0.507);
+}
+.picture img{/**dimensiona le immagini**/
+    height: 177px;
+    margin-bottom: 36px;
+    cursor: pointer;
+}
+figcaption{/**definito il margine e la visualizzazione**/
+    display: inline-block;
+    margin-left: 15px;
+}
+#twit{/**allinea il testo del div e renderizza il bordo grigio**/
+    border-bottom: 1px solid rgba(128, 128, 128, 0.507);
+    text-align: center;
+    margin: 10% 20% 0 0;
+}
+#twit button:hover{
+    background-color: #1DA1F3;
+    color: white;
+    font-weight: bold;
+    box-shadow: 5px 5px 15px #1DA1F3 ;
+}
+#twit button:hover ion-icon:last-child{
+    color: white;
+}
+.ct{/**classe generica di colore**/
+    color: #1DA1F3;
+}
+#section div{/**gestisce i margini di tutti i div della section**/
+    margin: 5% 20% 0 0;
+}
+#topic button{/**stilizza i pulsanti**/
+    border: none;
+    padding: 0 20px;
+    font-size: 10pt;
+    background-color: #80808024;
+    border-radius: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#topic button:hover{
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px #FFC017
+}
+.tb{/**altra classe di stilizzazione pulsanti**/
+    border: 1px solid grey;
+    padding: 0 20px;
+    font-size: 10pt;
+    background-color: transparent;
+    border-radius: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+#follow{/**dispone il contenuto in colonna**/
+    display: flex;
+    flex-direction: column;
+}
+#follow div{/**margine destro azzerato**/
+    margin-right: 0;
+}
+#follow button{/**posiziona i pulsanti**/
+    position: absolute;
+    right: 5em;
+    margin-left: 61px;
+}
+#follow button:hover{
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+#follow p{/**agisce su tutti i paragrafi del div follow**/
+    display: inline-block;
+    padding-left: 43px;
+    margin-top: 0;
+}
+#icon{
+    display: flex;
+    flex-direction: column;
+}
+#section a{/**colora il link**/
+    text-decoration: none;
+    color: green;
+}
+#twit a{/**renderizza e sottolinea il link**/
+    padding: 20px;
+    display: block;
+    color: grey;
+    text-decoration: underline;
+}
+footer{/**margini del footer**/
+    margin: 5% 20% 0 0;
+}
+ul{
+    padding-left: 0;
+}
+li{/**dispone gli item della lista in orizzontale**/
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: 10px;
+    color: grey;
+    cursor: pointer;
+}
+li:hover{
+    color: #FFC017;
+    background-color: black;
+    border-radius: 8px;
+    padding: 0 20px;
+    border: transparent;
+}
+.fw{/**classe generica di spessore carattere**/
+    font-weight: 600;
+}
+.fs{/**classe di grandezza carattere**/
+    font-size: 10pt;
+}
+.magazine div ion-icon:first-child{
+    font-size: x-large;/**ingrandisce le prime icone di ogni div**/
+}
+.iconl{/**ingrandisce le icone**/
+    font-size: x-large;
+}
+ion-icon{/**il cursore diventa una manina al contatto con le icone**/
+    cursor: pointer;
+}
