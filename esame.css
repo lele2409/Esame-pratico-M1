@@ -3,6 +3,8 @@ body{
 }
 header{
     display: flex;
+    position: fixed;
+    z-index: 1;
     justify-content: space-between;
     background-color: #FFC017;
     padding: 20px 100px;
@@ -56,7 +58,7 @@ h1{
     border-bottom:1px solid black;
 }
 .schedule{
-    width: 60%;
+    width: 55%;
     margin-top: 40px;
     margin-left: 100px;
     border-bottom: 1px solid rgba(128, 128, 128, 0.507);
@@ -85,15 +87,32 @@ h1{
     cursor: pointer;
 }
 .picture{
-    height: 300px;
-    width: 20%;
-    border: 1px solid darkgray;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    margin-top: 40px;
+    width: 17%;
 }
 main{
     display: flex;
 }
 #section{
-    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 5%;
     width: 30%;
-    border: 1px solid darkgray;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+}
+.picture img{
+    height: 150px;
+    margin-bottom: 24px;
+}
+figcaption{
+    display: inline-block;
+    margin-left: 15px;
+}
+#section div:first-child{
+    border-bottom: 1px solid rgba(128, 128, 128, 0.507);
 }
